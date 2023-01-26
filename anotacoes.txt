@@ -1,0 +1,10 @@
+>>> python
+>>> import django 
+>>> print(django.get_version()
+
+django-admin startproject <nome_do_projeto>
+
+python manage.py migrate
+
+python manage.py runserver 0.0.0.0:8000
+

@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+    python:
+      container_name: python
+      build: .
+      ports:
+        - "8001:8000"
+      volumes:
+        - .:/app 
+      networks: 
+        - localdev
+        
+networks: 
+  localdev:
+    name: localdev
